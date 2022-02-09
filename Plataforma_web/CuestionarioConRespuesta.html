@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cuestionario</title>
+    <link rel="shortcut icon" href="https://www.usco.edu.co/imagen-institucional/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/estilosTest.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+    <script type="text/javascript">
+
+        function evaluar(){
+            
+
+            //variable que me va a contar cuantas respuestas verdaderas tengo
+            var cont = 0;
+
+            //valores del radio button de la primera pregunta
+            var radios_p1 = document.getElementsByName("P1");
+
+            //valores del radio button de la segunda pregunta
+            var radios_p2 = document.getElementsByName("P2");
+
+            //valores del radio button de la tercera pregunta
+            var radios_p3 = document.getElementsByName("P3");
+
+            //valores del radio button de la tercera pregunta
+            var radios_p4 = document.getElementsByName("P4");
+
+            //valores del radio button de la tercera pregunta
+            var radios_p5 = document.getElementsByName("P5");
+
+            //valores del radio button de la tercera pregunta
+            var radios_p6 = document.getElementsByName("P6");
+
+            //valores del radio button de la tercera pregunta
+            var radios_p7 = document.getElementsByName("P7");
+
+            //valores del radio button de la tercera pregunta
+            var radios_p8 = document.getElementsByName("P8");
+
+            //valores del radio button de la tercera pregunta
+            var radios_p9 = document.getElementsByName("P9");
+
+            //valores del radio button de la tercera pregunta
+            var radios_p10= document.getElementsByName("P10");
+
+            //valores del radio button de la tercera pregunta
+            var radios_p11= document.getElementsByName("P11");
+
+            //valores del radio button de la tercera pregunta
+            var radios_p12= document.getElementsByName("P12");
+
+            //variable para validar respuestas incorrectas
+            var bandera = false;
+            
+            //Ciclo para recorrer los valores de la primera pregunta
+            for(var i=0; i < radios_p1.length; i++){
+                //si se ha seleccionado uno de los radios
+                if(radios_p1[i].checked){
+                    //si es la respuesta correcta
+                    if(radios_p1[i].value === "a"){
+                        //le suma 1 al contador
+                        cont=cont+1;
+                        // cambiamos el valor de la bandera
+                        bandera = true;
+                        //nos salimos del ciclo cuando ya encontramos la respuesta incorrecta
+                        break;
+    
+                    }
+                }
+            }
+
+            // Ciclo para recorrer los valores de la segunda pregunta
+            for(var i = 0; i < radios_p2.length; i++){
+                // si se ha seleccionado uno de los radios
+                if(radios_p2[i].checked){
+                    // si es la respuesta correcta
+                    if(radios_p2[i].value ===  "c"){
+                        //le suma 1 al contador
+                        cont=cont+1;
+                        // cambiamos el valor de la bandera
+                        bandera = true;
+                        // nos salimos del ciclo cuando ya encontramos la respuesta incorrecta
+                        break;
+                    }
+                }
+                
+            }
+            // Ciclo para recorrer los valores de la tercera pregunta
+            for(var i = 0; i < radios_p3.length; i++){
+                // si se ha seleccionado uno de los radios
+                if(radios_p3[i].checked){
+                    // si es la respuesta correcta
+                    if(radios_p3[i].value ===  "d"){
+                        //le suma 1 al contador
+                        cont=cont+1;
+                        // cambiamos el valor de la bandera
+                        bandera = true;
+                        // nos salimos del ciclo cuando ya encontramos la respuesta incorrecta
+                        break;
+                    }
+                }
+                
+            }
+            // Ciclo para recorrer los valores de la cuarta pregunta
+            for(var i = 0; i < radios_p4.length; i++){
+                // si se ha seleccionado uno de los radios
+                if(radios_p4[i].checked){
+                    // si es la respuesta correcta
+                    if(radios_p4[i].value ===  "d"){
+                        //le suma 1 al contador
+                        cont=cont+1;
+                        // cambiamos el valor de la bandera
+                        bandera = true;
+                        // nos salimos del ciclo cuando ya encontramos la respuesta incorrecta
+                        break;
+                    }
+                }
+                
+            }
+            // Ciclo para recorrer los valores de la quinta pregunta
+            for(var i = 0; i < radios_p5.length; i++){
+                // si se ha seleccionado uno de los radios
+                if(radios_p5[i].checked){
+                    // si es la respuesta correcta
+                    if(radios_p5[i].value ===  "c"){
+                        //le suma 1 al contador
+                        cont=cont+1;
+                        // cambiamos el valor de la bandera
+                        bandera = true;
+                        // nos salimos del ciclo cuando ya encontramos la respuesta incorrecta
+                        break;
+                    }
+                }
+                
+            }
+            // Ciclo para recorrer los valores de la sexta pregunta
+            for(var i = 0; i < radios_p6.length; i++){
+                // si se ha seleccionado uno de los radios
+                if(radios_p6[i].checked){
+                    // si es la respuesta correcta
+                    if(radios_p6[i].value ===  "d"){
+                        //le suma 1 al contador
+                        cont=cont+1;
+                        // cambiamos el valor de la bandera
+                        bandera = true;
+                        // nos salimos del ciclo cuando ya encontramos la respuesta incorrecta
+                        break;
+                    }
+                }
+                
+            }
+            // Ciclo para recorrer los valores de la septima pregunta
+            for(var i = 0; i < radios_p7.length; i++){
+                // si se ha seleccionado uno de los radios
+                if(radios_p7[i].checked){
+                    // si es la respuesta correcta
+                    if(radios_p7[i].value ===  "c"){
+                        //le suma 1 al contador
+                        cont=cont+1;
+                        // cambiamos el valor de la bandera
+                        bandera = true;
+                        // nos salimos del ciclo cuando ya encontramos la respuesta incorrecta
+                        break;
+                    }
+                }
+                
+            }
+            // Ciclo para recorrer los valores de la octaba pregunta
+            for(var i = 0; i < radios_p8.length; i++){
+                // si se ha seleccionado uno de los radios
+                if(radios_p8[i].checked){
+                    // si es la respuesta correcta
+                    if(radios_p8[i].value ===  "c"){
+                        //le suma 1 al contador
+                        cont=cont+1;
+                        // cambiamos el valor de la bandera
+                        bandera = true;
+                        // nos salimos del ciclo cuando ya encontramos la respuesta incorrecta
+                        break;
+                    }
+                }
+                
+            }
+            // Ciclo para recorrer los valores de la novena pregunta
+            for(var i = 0; i < radios_p9.length; i++){
+                // si se ha seleccionado uno de los radios
+                if(radios_p9[i].checked){
+                    // si es la respuesta correcta
+                    if(radios_p9[i].value ===  "a"){
+                        //le suma 1 al contador
+                        cont=cont+1;
+                        // cambiamos el valor de la bandera
+                        bandera = true;
+                        // nos salimos del ciclo cuando ya encontramos la respuesta incorrecta
+                        break;
+                    }
+                }
+                
+            }
+            // Ciclo para recorrer los valores de la decima pregunta
+            for(var i = 0; i < radios_p10.length; i++){
+                // si se ha seleccionado uno de los radios
+                if(radios_p10[i].checked){
+                    // si es la respuesta correcta
+                    if(radios_p10[i].value ===  "a"){
+                        //le suma 1 al contador
+                        cont=cont+1;
+                        // cambiamos el valor de la bandera
+                        bandera = true;
+                        // nos salimos del ciclo cuando ya encontramos la respuesta incorrecta
+                        break;
+                    }
+                }
+                
+            }
+            // Ciclo para recorrer los valores de la decima primera pregunta
+            for(var i = 0; i < radios_p11.length; i++){
+                // si se ha seleccionado uno de los radios
+                if(radios_p11[i].checked){
+                    // si es la respuesta correcta
+                    if(radios_p11[i].value ===  "c"){
+                        //le suma 1 al contador
+                        cont=cont+1;
+                        // cambiamos el valor de la bandera
+                        bandera = true;
+                        // nos salimos del ciclo cuando ya encontramos la respuesta incorrecta
+                        break;
+                    }
+                }
+                
+            }
+            // Ciclo para recorrer los valores de la decima segunda pregunta
+            for(var i = 0; i < radios_p12.length; i++){
+                // si se ha seleccionado uno de los radios
+                if(radios_p12[i].checked){
+                    // si es la respuesta correcta
+                    if(radios_p12[i].value ===  "a"){
+                        //le suma 1 al contador
+                        cont=cont+1;
+                        // cambiamos el valor de la bandera
+                        bandera = true;
+                        // nos salimos del ciclo cuando ya encontramos la respuesta incorrecta
+                        break;
+                    }
+                }
+                
+            }
+            // si el valor de la bandera es true nos dice que no tenemos respuestas validas
+            if(!bandera){
+                alert("Vuelve a intentarlo o selecciona respuestas validas");
+
+            }
+
+            //mensaje con la cantidad de respuestas correctas
+            alert("Tiene "+cont+" respuestas correctas de 12");
+
+            
+    
+           
+    
+    
+    
+        }
+    
+    </script>
+    
+
+</head>
+<body>
+    <nav>
+            <a href="index.html">Inicio</a>
+
+    </nav>
+    <div class="contenido">
+    <h1 class="titulo">Cuestionario Electronica</h1>
+    <form>
+        <h3><span>1</span>Si queremos medir la intensidad que pasa por un circuito, ¿Como conectaremos el amperimetro 
+            en el circuito?</h3>
+        <br>
+        <input type="radio" name="P1" id="a" value="a">
+        <label for="a">En serie</label> <br>
+
+        <input type="radio" name="P1" id="b" value="b">
+        <label for="b">En paralelo</label> <br>
+
+        <input type="radio" name="P1" id="c" value="c">
+        <label for="c">En mixto</label> <br>
+
+        <input type="radio" name="P1" id="d" value="d">
+        <label for="d">Es indiferente</label> <br>
+
+        <br>
+        <h3><span>2</span>¿Cual de estas formulas es la ley de OHM?</h3>
+        <br>
+        <input type="radio" name="P2" id="a" value="a">
+        <label for="a">V = R / I</label> <br>
+
+        <input type="radio" name="P2" id="b" value="b">
+        <label for="b">R = V x I</label> <br>
+
+        <input type="radio" name="P2" id="c" value="c">
+        <label for="c">I = V / R</label> <br>
+
+        <input type="radio" name="P2" id="d" value="d">
+        <label for="d">R = I / V</label> <br>
+
+        <br>
+        <h3><span>3</span>En un circuito de dos resistencias en paralelo la Rt (Resistencia total) es: </h3>
+        <br>
+        <input type="radio" name="P3" id="a" value="a">
+        <label for="a">Rt = (R1+R2) / (R1xR2)</label> <br>
+
+        <input type="radio" name="P3" id="b" value="b">
+        <label for="b">Rt = (R1xR2) / (R1-R2)</label> <br>
+
+        <input type="radio" name="P3" id="c" value="c">
+        <label for="c">Rt = (1/R1) + (1/R2)</label> <br>
+
+        <input type="radio" name="P3" id="d" value="d">
+        <label for="d">Rt = (R1xR2) / (R1+R2)</label> <br>
+
+        <br>
+        <h3><span>4</span>En un circuito de resistencias en serie, la Resistencia Total es: </h3>
+        <br>
+        <input type="radio" name="P4" id="a" value="a">
+        <label for="a">Rt = R1 x R2 x R3</label> <br>
+
+        <input type="radio" name="P4" id="b" value="b">
+        <label for="b">1/Rt = 1/R1 + 1/R2 + …</label> <br>
+
+        <input type="radio" name="P4" id="c" value="c">
+        <label for="c">Rt = R1 + R2 - R3 </label> <br>
+
+        <input type="radio" name="P4" id="d" value="d">
+        <label for="d">Rt = R1 + R2 + R3 x Rn</label> <br>
+
+        <br>
+        <h3><span>5</span>En un circuito de resistencias en serie, la Resistencia Total es: </h3>
+        <br>
+        <input type="radio" name="P5" id="a" value="a">
+        <label for="a">La tensión es la misma en todos los puntos</label> <br>
+
+        <input type="radio" name="P5" id="b" value="b">
+        <label for="b">La resistencia total es igual a la resta de parciales.</label> <br>
+
+        <input type="radio" name="P5" id="c" value="c">
+        <label for="c">La Intensidad es igual para todas.</label> <br>
+
+        <input type="radio" name="P5" id="d" value="d">
+        <label for="d">La intensidad se calcula por KIRCHHOFF.</label> <br>
+
+        <br>
+        <h3><span>6</span>En un circuito paralelo de resistencias, se cumple que:</h3>
+        <br>
+        <input type="radio" name="P6" id="a" value="a">
+        <label for="a">La suma de corrientes parciales no es igual a la total.</label> <br>
+
+        <input type="radio" name="P6" id="b" value="b">
+        <label for="b">La suma de tensiones parciales es igual a la total.</label> <br>
+
+        <input type="radio" name="P6" id="c" value="c">
+        <label for="c">La potencia disipada es la misma en cada elemento.</label> <br>
+
+        <input type="radio" name="P6" id="d" value="d">
+        <label for="d">La tensión es igual en todas las resistencias</label> <br>
+
+        <br>
+        <h3><span>7</span>La potencia que disipa una resistencia es:</h3>
+        <br>
+        <input type="radio" name="P7" id="a" value="a">
+        <label for="a">P = V / I</label> <br>
+
+        <input type="radio" name="P7" id="b" value="b">
+        <label for="b">P = I x I/R</label> <br>
+
+        <input type="radio" name="P7" id="c" value="c">
+        <label for="c">P = V x I</label> <br>
+
+        <input type="radio" name="P7" id="d" value="d">
+        <label for="d">P = V x V / I</label> <br>
+
+        <br>
+        <h3><span>8</span>Si colocamos 1.000 resistencias de 1 Mohm en paralelo, R total será:</h3>
+        <br>
+        <input type="radio" name="P8" id="a" value="a">
+        <label for="a">1.000 ohm.</label> <br>
+
+        <input type="radio" name="P8" id="b" value="b">
+        <label for="b">1 Mohm</label> <br>
+
+        <input type="radio" name="P8" id="c" value="c">
+        <label for="c">1 ohm.</label> <br>
+
+        <input type="radio" name="P8" id="d" value="d">
+        <label for="d">100 ohm.</label> <br>
+
+        <br>
+        <h3><span>9</span>Si colocamos en paralelo una resistencia de 100 Kohm y 10 ohm, la resistencia equivalente será:</h3>
+        <br>
+        <input type="radio" name="P9" id="a" value="a">
+        <label for="a">9,999 ohm.</label> <br>
+
+        <input type="radio" name="P9" id="b" value="b">
+        <label for="b">10 ohm</label> <br>
+
+        <input type="radio" name="P9" id="c" value="c">
+        <label for="c">100.001 ohm.</label> <br>
+
+        <input type="radio" name="P9" id="d" value="d">
+        <label for="d">100.010 ohm</label> <br>
+        
+
+        <br>
+        <h3><span>10</span>La resistencia de un conductor depende de:</h3>
+        <br>
+        <input type="radio" name="P10" id="a" value="a">
+        <label for="a">Longitud, conductividad y diámetro de conductor</label> <br>
+
+        <input type="radio" name="P10" id="b" value="b">
+        <label for="b">Conductividad, sección y distancia de conductor.</label> <br>
+
+        <input type="radio" name="P10" id="c" value="c">
+        <label for="c">Longitud, sección y conductancia.</label> <br>
+
+        <input type="radio" name="P10" id="d" value="d">
+        <label for="d">Longitud, resistividad y sección de conductor.</label> <br>
+
+        <br>
+        <h3><span>11</span>La resistencia eléctrica que presenta un conductor es:</h3>
+        <br>
+        <input type="radio" name="P11" id="a" value="a">
+        <label for="a">La dificultad al paso de la tensión.</label> <br>
+
+        <input type="radio" name="P11" id="b" value="b">
+        <label for="b">La dificultad al paso de la carga de potencial.</label> <br>
+
+        <input type="radio" name="P11" id="c" value="c">
+        <label for="c">La dificultad al paso de la corriente eléctrica.</label> <br>
+
+        <input type="radio" name="P11" id="d" value="d">
+        <label for="d">La dificultad al paso de energía eléctrica.</label> <br>
+        
+
+        <br>
+        <h3><span>12</span>La ley de Ohm se define por:</h3>
+        <br>
+        <input type="radio" name="P12" id="a" value="a">
+        <label for="a">En un circuito eléctrico, la Intensidad de la corriente que la recorre es directamente proporcional a la tensión e &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inversamente a la Resistencia.</label> <br>
+
+        <input type="radio" name="P12" id="b" value="b">
+        <label for="b">Es un circuito eléctrico donde la intensidad es directamente proporcional a la tensión e inversamente proporcional &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a la resistividad.</label> <br>
+
+        <input type="radio" name="P12" id="c" value="c">
+        <label for="c">A mayor diferencia de potencial mayor corriente de electrones, e inversamente proporcional a la resistencia del &nbsp;&nbsp;&nbsp;&nbsp;circuito.</label> <br>
+
+        <input type="radio" name="P12" id="d" value="d">
+        <label for="d">La V que existe en un circuito es directamente proporcional a la carga eléctrica y a la resistencia del circuito.</label> <br>
+
+        <br><br>
+
+        <button onclick="evaluar()">ENVIAR</button>
+
+    </form>
+   </div>
+</body>
+</body>
+</html>

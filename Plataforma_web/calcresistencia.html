@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Calculadora de resistencias</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdm.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="https://www.usco.edu.co/imagen-institucional/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/estilocalcres.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script s="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	 <nav>
+            <a href="index.html">Inicio</a>
+            <a href="">Pagina Siguiente</a>
+            <a href="">Pagina Anterior</a>
+        </nav>
+        <h1>CALCULADORA DE RESISTENCIA</h1>
+        <img src="img/codigocoloresresistencias.jpg" alt="" class="imagen">
+        <div class= "contenedor">
+ <script>
+ 	function calcular(){
+
+ 		var a = document.f1.b1.value;
+ 		var b = document.f1.b2.value;
+ 		var x = document.f1.b3.value;
+ 		var r = document.f1.c.value;
+ 		r1= a.toString()+b.toString();
+ 		r=parseFloat(r1)*parseFloat(x);
+ 		document.f1.c.value=r;
+ 	}
+ </script>
+
+ <form class="formulario" name="f1" action="resistencia.html" method="POST">
+ 	<h4>INGRESA LOS DATOS</h4>
+ 	<h3>Banda 1</h3>
+ 	<div class="input-contenedor">
+	<select name="b1" class="form-control">
+		<option value="0" > Negro</option>
+		<option value="1" > Marron</option>
+		<option value="2" > Rojo</option>
+		<option value="3" > Naranja</option>
+		<option value="4" > Amarillo</option>
+		<option value="5" > Verde</option>
+		<option value="6" > Azul</option>
+		<option value="7" > Violeta</option>
+		<option value="8" > Gris</option>
+		<option value="9" > Blanco</option>
+	</select>
+    </div>
+
+	<br><br>
+
+	<h3>Banda 2</h3>
+	<div class="input-contenedor">
+		<select name="b2" class="form-control">
+		<option value="0" > Negro</option>
+		<option value="1" > Marron</option>
+		<option value="2" > Rojo</option>
+		<option value="3" > Naranja</option>
+		<option value="4" > Amarillo</option>
+		<option value="5" > Verde</option>
+		<option value="6" > Azul</option>
+		<option value="7" > Violeta</option>
+		<option value="8" > Gris</option>
+		<option value="9" > Blanco</option>
+	</select>
+	</div>
+
+	<br><br>
+
+	<h3>Banda 3</h3>
+	<div class="input-contenedor">
+		<select name="b3" class="form-control">
+		<option value="1" > Negro</option>
+		<option value="10" > Marron</option>
+		<option value="100" > Rojo</option>
+		<option value="1000" > Naranja</option>
+		<option value="10000" > Amarillo</option>
+		<option value="100000" > Verde</option>
+		<option value="1000000" > Azul</option>
+		<option value="10000000" > Violeta</option>
+		<option value="100000000" > Gris</option>
+		<option value="1000000000" > Blanco</option>
+	</select>
+	</div>
+
+	<br><br>
+
+	<input type="Button" name="" value="Calcular" onclick="calcular()" class="button">
+	<br><br>
+	<input type="text" class="resultado" id="c" name="c" placeholder="Resultado en OHMS" title="Resultado">
+ </form>
+        </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ingreso Usuario</title> 
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+	<link rel="shortcut icon" href="https://www.usco.edu.co/imagen-institucional/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<link rel="stylesheet" href="css/estiloslogin.css">
+	
+
+</head>  
+<body>
+		 <nav>
+            <a href="index.html">Inicio</a>
+   
+        </nav>
+    <form class="formulario" method="post" action="ingreso.php">
+    <h1>Ingreso</h1>
+     <div class="contenedor">
+         <div class="input-contenedor">
+         <i class="fas fa-envelope icon"></i>
+         <input type="text" name="correoelectronico" placeholder="Correo Electronico" title="Correo Electronico" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required />
+         
+         </div>
+         
+         <div class="input-contenedor">
+        <i class="fas fa-key icon"></i>
+         <input type="password" name="contraseña" placeholder="Contraseña" title="Contraseña" required />
+         
+         </div>
+
+          <div class="input-contenedor">
+         <i class="fas fa-chalkboard-teacher icon"></i>
+         <input type="text" name="rol" placeholder="Docente o Estudiante" title="Escriba su rol" required />
+         
+         </div>
+         <input type="submit" value="Login" class="button">
+         <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+         <p>¿No tienes una cuenta? <a class="link" href="registro.html">Registrate </a></p>
+     </div>
+    </form>
+</body>
+</html>
